@@ -1,8 +1,8 @@
 import os
 import fitz  # PDF
 import pandas as pd
-from docx import Document as DocxDocument  # DOCX
-from pptx import Presentation  # PPTX
+from docx import Document as DocxDocument  
+from pptx import Presentation  
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
 from langchain_openai import AzureOpenAIEmbeddings
