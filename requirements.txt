@@ -1,0 +1,14 @@
+openai
+langchain
+autogen
+pymupdf
+langchain_community
+langchain
+faiss-cpu
+langchain_openai
+tiktoken
+python-dotenv
+streamlit
+python-docx
+python-pptx
+pandas
