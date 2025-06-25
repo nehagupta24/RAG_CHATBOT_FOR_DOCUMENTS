@@ -16,7 +16,7 @@ AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT
 openai_api_key = os.getenv("OPENAI_API_KEY")
 openai_model = os.getenv("OPENAI_MODEL")
 
-# Create an AutoGen Assistant Agent
+
 doc_assistant = AssistantAgent(
     name="DocAssistant",
     llm_config={
@@ -50,7 +50,7 @@ def retrieve_doc_context(query: str) -> str:
 
     return "\n\n".join([doc.page_content for doc in docs])
 
-# Register this function to the AutoGen assistant
+
 register_function(
     retrieve_doc_context,
     caller=doc_assistant,
@@ -58,7 +58,7 @@ register_function(
     description="Retrieve relevant context from the indexed documents (PDF, DOCX, PPTX) based on the user's query."
 )
 
-# Example run
+
 if __name__ == "__main__":
     query = "What are the education of neha?"
     context = retrieve_doc_context(query)
