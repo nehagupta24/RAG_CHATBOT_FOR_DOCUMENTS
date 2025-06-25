@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from autogen import AssistantAgent, UserProxyAgent
-from tools import retrieve_doc_context  # UPDATED function from your tools
+from tools import retrieve_doc_context  
 from langchain_openai import ChatOpenAI 
 
 load_dotenv()
